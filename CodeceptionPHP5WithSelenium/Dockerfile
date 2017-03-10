@@ -21,6 +21,5 @@ RUN wget http://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodr
 RUN tar -xzf geckodriver-v0.15.0-linux64.tar.gz
 RUN mv geckodriver /usr/local/bin/geckodriver
 
-RUN java -jar /usr/local/bin/selenium-server-standalone-3.2.0.jar & 
 
 EXPOSE 8080 4444
