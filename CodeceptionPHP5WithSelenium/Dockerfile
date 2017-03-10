@@ -4,7 +4,7 @@ FROM anapsix/alpine-java:8
 MAINTAINER nootan.ghimire@gmail.com
 
 RUN apk update \
-    && apk add php5 \
+    && apk add php5 php5-phar php5-json \
     && apk add openssl \
     && apk add curl
 
@@ -28,7 +28,7 @@ RUN chmod +x /usr/local/bin/codecept
 #RUN php composer-setup.php
 #RUN php -r "unlink('composer-setup.php');"
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN wget http://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
 RUN tar -xzf geckodriver-v0.15.0-linux64.tar.gz
