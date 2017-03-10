@@ -6,7 +6,8 @@ MAINTAINER nootan.ghimire@gmail.com
 RUN apk update \
     && apk add php5 php5-phar php5-json \
     && apk add openssl \
-    && apk add curl
+    && apk add curl \
+    && apk add git
 
 RUN mkdir -p /usr/local/bin
 ENV PATH="$PATH:/usr/local/bin"
