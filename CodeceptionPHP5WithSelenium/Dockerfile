@@ -1,3 +1,4 @@
+FROM composer/composer:php5-alpine
 FROM anapsix/alpine-java:8
 
 MAINTAINER nootan.ghimire@gmail.com
@@ -14,8 +15,8 @@ RUN mv dR7Lg2 /usr/local/bin/selenium-server-standalone-3.2.0.jar
 RUN wget http://codeception.com/codecept.phar
 RUN mv codecept.phar /usr/local/bin/codecept
 
-RUN wget http://getcomposer.org/composer.phar
-RUN mv composer.phar /usr/local/bin/composer.phar
+#RUN wget http://getcomposer.org/composer.phar
+#RUN mv composer.phar /usr/local/bin/composer.phar
 
 RUN wget http://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
 RUN tar -xzf geckodriver-v0.15.0-linux64.tar.gz
