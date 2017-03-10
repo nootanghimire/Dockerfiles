@@ -4,7 +4,8 @@ MAINTAINER nootan.ghimire@gmail.com
 
 RUN apk update \
     && apk add php5 \
-    && apk add openssl
+    && apk add openssl \
+    && apk add openjdk
 
 RUN mkdir -p /usr/local/bin
 
