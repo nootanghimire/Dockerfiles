@@ -1,11 +1,10 @@
-FROM alpine:latest
+FROM anapsix/alpine-java:8
 
 MAINTAINER nootan.ghimire@gmail.com
 
 RUN apk update \
     && apk add php5 \
-    && apk add openssl \
-    && apk add openjdk
+    && apk add openssl
 
 RUN mkdir -p /usr/local/bin
 
