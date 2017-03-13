@@ -9,7 +9,7 @@ RUN apt-get update \
 RUN mkdir -p /usr/local/bin
 ENV PATH="$PATH:/usr/local/bin"
 
-RUN wget http://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar -o /usr/local/bin/selenium-server-standalone-3.0.1.jar \
+RUN wget http://selenium-release.storage.googleapis.com/2.40/selenium-server-standalone-2.40.0.jar -o /usr/local/bin/selenium-server-standalone-2.40.0.jar \
     && wget http://codeception.com/codecept.phar -o /usr/local/bin/codecept \
     && chmod +x /usr/local/bin/codecept \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
