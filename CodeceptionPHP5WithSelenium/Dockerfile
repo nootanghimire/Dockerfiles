@@ -17,7 +17,7 @@ RUN wget http://goo.gl/dR7Lg2 -o /usr/local/bin/selenium-server-standalone-3.2.0
     && tar -xzf geckodriver-v0.15.0-linux64.tar.gz \
     && mv geckodriver /usr/local/bin/geckodriver
 
-RUN composer --version
-RUN java -jar /usr/local/bin/selenium-server-standalone-3.2.0.jar &
+#RUN composer --version
+#RUN java -jar /usr/local/bin/selenium-server-standalone-3.2.0.jar &
 
 EXPOSE 8080 4444
