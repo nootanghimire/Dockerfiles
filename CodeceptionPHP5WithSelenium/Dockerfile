@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:jessie-backports
 
 MAINTAINER nootan.ghimire@gmail.com
 
