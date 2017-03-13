@@ -3,7 +3,7 @@ FROM debian:jessie-backports
 MAINTAINER nootan.ghimire@gmail.com
 
 RUN apt-get update \
-    && yes | apt-get install openssl php5  php5-json curl git default-jre default-jdk wget
+    && yes | apt-get install openssl curl php5  php5-json php5-curl git default-jre default-jdk wget
 
 
 RUN mkdir -p /usr/local/bin
